@@ -1,0 +1,127 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #202020;
+}
+
+:root {
+    --color-black-primary : rgba(255, 255, 255);
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column; 
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 20px;
+    height: 50px;
+    width: 100%;
+}
+
+.header__right {
+    display: flex;
+    padding: 10px 20px;
+}
+
+.header__right a {
+    margin-right: 16px;
+    font-weight: 500;
+    color: var(--color-black-primary);
+}
+
+.header__right a:hover {
+    text-decoration: underline;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.feature img {
+    width: 285px;
+    height: auto;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+.search__input {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 99px;
+    padding: 0 16px;
+    border: 1px solid white;
+}
+
+.search__input input {
+    flex: 1;
+    font-size: 16px;
+    margin-bottom: 4px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.search__input .photo {
+    cursor: pointer;
+}
+
+.search__action {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.search__action button {
+    border: 1px solid transparent;
+    padding: 7px 12px;
+    color: white;
+    border-radius: 8px;
+    background-color: #323232;
+    cursor: pointer;
+}
+
+.search__action button:hover {
+    border: 1px solid rgba(255, 255, 255, 0.281);
+}
+
+.language {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 14px;
+}
+
+.h5 {
+    color: rgba(255, 255, 255, 0.49);
+    text-align: center;
+    font-size: 12px;
+}
+
